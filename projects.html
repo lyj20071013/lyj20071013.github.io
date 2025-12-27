@@ -171,90 +171,57 @@
                 <div class="space-y-12">
                     <!-- 2025年项目 -->
                     <div class="timeline-item">
-                        <div class="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-xl p-8 border border-white border-opacity-10">
-                            <div class="flex items-center justify-between mb-6">
-                                <h3 class="text-3xl font-bold text-white">2025年7月~至今 - 技术突破</h3>
-                                <span class="text-lg text-orange-400 font-semibold">最新进展</span>
-                            </div>
-                            <div class="col-span-1 lg:col-span-2 bg-gradient-to-br from-orange-900/40 to-black border border-orange-500/30 rounded-xl p-6 relative overflow-hidden group">
-                                <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-orange-500/20"></div>
-                                
-                                <div class="flex items-start justify-between relative z-10">
-                                    <div>
-                                        <div class="flex items-center gap-3 mb-2">
-                                            <h4 class="text-2xl font-bold text-white">DZ-TiDPO Framework</h4>
-                                            <span class="px-2 py-0.5 bg-orange-500 text-black text-xs font-bold rounded">ACL 2026 Submission</span>
+                        <div class="bg-gradient-to-br from-gray-900 to-black rounded-xl p-1 border border-orange-500/30 shadow-2xl relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl -mr-32 -mt-32 transition-all duration-700 group-hover:bg-orange-500/20"></div>
+                            
+                            <div class="bg-[#0f0f13] rounded-lg p-8 h-full relative z-10">
+                                <div class="flex flex-col lg:flex-row gap-8">
+                                    
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-4">
+                                            <div class="flex items-center gap-3">
+                                                <h3 class="text-3xl font-bold text-white tracking-tight">DZ-TiDPO</h3>
+                                                <span class="px-3 py-1 bg-gradient-to-r from-orange-500 to-red-600 text-white text-xs font-bold rounded-full shadow-lg">ACL 2026 Submission</span>
+                                            </div>
+                                            <span class="text-orange-400 font-mono text-sm">2025.12</span>
                                         </div>
-                                        <p class="text-gray-300 mb-4 max-w-2xl">
-                                            解决长上下文对话中“状态惯性”(State Inertia) 问题的对齐框架。
-                                            提出 <strong>Minimally Invasive Temporal Alignment</strong>，通过动态 KL 惩罚与时序注意力偏差，在不破坏模型通用能力的前提下实现状态的精准更新。
+                                        
+                                        <p class="text-gray-300 mb-6 leading-relaxed">
+                                            <strong class="text-white">Overcoming State Inertia:</strong> 针对长上下文对话中模型“固守历史、难以适应新指令”的问题，提出的一种最小侵入式对齐框架。
+                                            <br><br>
+                                            核心贡献包括：
+                                            <span class="text-gray-400 block mt-2 text-sm">
+                                                • ⚡ <strong>Temporal Attention Bias:</strong> 在推理端引入时序注意力偏置。<br>
+                                                • ⚖️ <strong>Dynamic KL Constraint:</strong> 训练端实现语义自适应的动态约束。<br>
+                                                • 📉 <strong>SOTA 性能:</strong> 在 IC-Bench 及多轮对话任务上超越标准 DPO。
+                                            </span>
                                         </p>
-                                    </div>
-                                    <div class="hidden sm:block text-4xl">
-                                        🚀
-                                    </div>
-                                </div>
 
-                                <div class="flex flex-wrap gap-2 mb-6 relative z-10">
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">Alignment</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">DPO / RLHF</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">Dynamic Loss</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">IC-Bench</span>
-                                </div>
+                                        <div class="flex flex-wrap gap-2 mb-8">
+                                            <span class="px-3 py-1 border border-orange-500/30 text-orange-400 rounded text-sm hover:bg-orange-500/10 transition-colors">RLHF/DPO</span>
+                                            <span class="px-3 py-1 border border-blue-500/30 text-blue-400 rounded text-sm hover:bg-blue-500/10 transition-colors">Long Context</span>
+                                            <span class="px-3 py-1 border border-purple-500/30 text-purple-400 rounded text-sm hover:bg-purple-500/10 transition-colors">Alignment</span>
+                                        </div>
 
-                                <div class="flex items-center gap-6 relative z-10">
-                                    <a href="https://www.semanticscholar.org/author/Yijun-Liao/2396663372" target="_blank" class="text-white hover:text-orange-400 transition-colors flex items-center font-medium">
-                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                        Read Preprint
-                                    </a>
-                                    <span class="text-gray-500 flex items-center text-sm cursor-not-allowed">
-                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                                        Code (Coming Soon)
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 class="text-xl font-bold text-white mb-3">YingHub V3 - 稀疏混合专家语言模型</h4>
-                                    <p class="text-gray-300 mb-4">
-                                        基于Triton实现Flash Attention，支持异构专家和动态Top-k路由的先进语言模型架构。
-                                        引入戏剧结构强化和流式数据迭代器，大幅提升模型性能和训练效率。
-                                    </p>
-                                    <div class="flex flex-wrap gap-2 mb-4">
-                                        <span class="tech-tag px-3 py-1 rounded-full text-sm">LLM</span>
-                                        <span class="tech-tag px-3 py-1 rounded-full text-sm">MoE</span>
-                                        <span class="tech-tag px-3 py-1 rounded-full text-sm">Triton</span>
-                                        <span class="tech-tag px-3 py-1 rounded-full text-sm">FlashAttention</span>
-                                        <span class="tech-tag px-3 py-1 rounded-full text-sm">Python</span>
+                                        <div class="flex gap-4">
+                                            <a href="https://www.semanticscholar.org/author/Yijun-Liao/2396663372" target="_blank" class="flex items-center px-6 py-2 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors">
+                                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                                Read Paper
+                                            </a>
+                                        </div>
                                     </div>
-                                    <a href="https://github.com/naidezhujimo/YingHub-v3" target="_blank" class="text-orange-400 hover:text-orange-300 transition-colors duration-300 inline-flex items-center">
-                                        查看项目 
-                                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div>
-                                    <h4 class="text-xl font-bold text-white mb-3">强化学习算法集 - 完整实现</h4>
-                                    <p class="text-gray-300 mb-4">
-                                        完整的强化学习算法实现，包括DQN、PPO、DDPG、TD3等主流算法和ICM、RENT、RaR、INTUITOR等前沿算法。
-                                        支持多种环境训练或LLM，从经典控制到连续控制任务、从无监督到自监督的全面覆盖。
-                                    </p>
-                                    <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">RL</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">PPO</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">DPO</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">GRPO</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">U-RL</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">SSRL</span>
-                                    <span class="tech-tag px-3 py-1 rounded-full text-sm">PyTorch</span>
+
+                                    <div class="lg:w-1/2 relative group/image cursor-zoom-in">
+                                        <div class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-purple-600 rounded-lg blur opacity-25 group-hover/image:opacity-75 transition duration-1000 group-hover/image:duration-200"></div>
+                                        <div class="relative bg-black rounded-lg overflow-hidden border border-gray-800">
+                                            <img src="resources/dz-tidpo-arch.jpg" alt="DZ-TiDPO Architecture" class="w-full h-full object-cover transform transition-transform duration-500 group-hover/image:scale-105">
+                                            
+                                            <div class="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-2 border-t border-gray-800 translate-y-full group-hover/image:translate-y-0 transition-transform duration-300">
+                                                <p class="text-xs text-center text-gray-400 font-mono">Figure 1: The DZ-TiDPO Framework Architecture</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <a href="https://github.com/naidezhujimo/Some-unsupervised-reinforcement-learning" target="_blank" class="text-orange-400 hover:text-orange-300 transition-colors duration-300 inline-flex items-center">
-                                        查看项目 
-                                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                        </svg>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
