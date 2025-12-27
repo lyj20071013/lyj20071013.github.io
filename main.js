@@ -84,12 +84,12 @@ function initNeuralBackground() {
 // 初始化打字机效果
 function initTypingEffect() {
     const texts = [
-        '独立AI研究员',
-        'LLM架构优化专家',
-        '强化学习算法工程师',
-        'CUDA计算优化专家',
-        '开源项目贡献者',
-        'AAAI PC成员'
+        '独立AI研究员 (Independent Researcher)',
+        'Building LLMs from Scratch',
+        'Hacking CUDA Kernels',
+        'Reinforcement Learning Alignment',
+        'AAAI 2026 PC Member',
+        'ACL 2026 Author'
     ];
     
     let textIndex = 0;
