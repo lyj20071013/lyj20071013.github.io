@@ -266,32 +266,23 @@
                         <div class="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-4">
                             <span class="text-white font-bold text-xl">LLM</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white">大语言模型</h3>
+                        <h3 class="text-xl font-bold text-white">架构优化与复现</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        深入理解Transformer架构，掌握MoE、RLHF、RoPE、FlashAttention等核心技术。
-                        具备从零开始实现和优化大语言模型的能力。
+                    <p class="text-gray-300 mb-4 text-sm">
+                        不依赖现成框架，从底层复现并优化 Transformer 核心组件。
                     </p>
-                    <div class="space-y-2">
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">Transformer</span>
-                            <span class="text-orange-400">专家级</span>
+                    <div class="space-y-3">
+                        <div class="text-sm border-l-2 border-orange-400 pl-3">
+                            <div class="text-gray-200 font-medium">MoE & Routing</div>
+                            <div class="text-gray-500 text-xs">实现了支持动态 Top-k 路由的稀疏混合专家模型 (YingHub V3)。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">MoE架构</span>
-                            <span class="text-orange-400">专家级</span>
+                        <div class="text-sm border-l-2 border-orange-400 pl-3">
+                            <div class="text-gray-200 font-medium">Memory Mechanism</div>
+                            <div class="text-gray-500 text-xs">复刻 Infini-Transformer 压缩记忆机制，解决长窗口问题。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">RLHF</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">测试时扩展</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">FlashAttention</span>
-                            <span class="text-orange-400">专家级</span>
+                        <div class="text-sm border-l-2 border-orange-400 pl-3">
+                            <div class="text-gray-200 font-medium">Custom Attention</div>
+                            <div class="text-gray-500 text-xs">设计了时序注意力偏差 (Temporal Attention Bias) 以解决状态惯性。</div>
                         </div>
                     </div>
                 </div>
@@ -302,104 +293,81 @@
                         <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg flex items-center justify-center mr-4">
                             <span class="text-white font-bold text-xl">RL</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white">强化学习</h3>
+                        <h3 class="text-xl font-bold text-white">强化学习与对齐</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        掌握从基础到高级的强化学习算法，包括策略梯度、Actor-Critic、PPO、
-                        DPO等，具备丰富的算法实现和调优经验。
+                    <p class="text-gray-300 mb-4 text-sm">
+                        深入理解 PPO/DPO 数学原理，具备从零手写 Loss 函数与 Trainer 的能力。
                     </p>
-                    <div class="space-y-2">
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">PPO/DPO/GRPO等策略梯度</span>
-                            <span class="text-orange-400">专家级</span>
+                    <div class="space-y-3">
+                        <div class="text-sm border-l-2 border-purple-400 pl-3">
+                            <div class="text-gray-200 font-medium">Alignment Algorithms</div>
+                            <div class="text-gray-500 text-xs">Implemented DPO, PPO, GRPO from scratch in PyTorch.</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">Actor-Critic</span>
-                            <span class="text-orange-400">专家级</span>
+                        <div class="text-sm border-l-2 border-purple-400 pl-3">
+                            <div class="text-gray-200 font-medium">Novel Loss Functions</div>
+                            <div class="text-gray-500 text-xs">设计了动态 KL 惩罚机制 (Dynamic KL Penalty) 优化长对话对齐。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">多智能体</span>
-                            <span class="text-orange-400">高级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">自监督强化学习</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">无监督强化学习</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">模型监督强化学习</span>
-                            <span class="text-orange-400">专家级</span>
+                        <div class="text-sm border-l-2 border-purple-400 pl-3">
+                            <div class="text-gray-200 font-medium">Unsupervised RL</div>
+                            <div class="text-gray-500 text-xs">复现了 ICM、RENT 等前沿无监督 RL 算法。</div>
                         </div>
                     </div>
                 </div>
+
+                
                 <div class="skill-card rounded-xl p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-gradient-to-r from-teal-400 to-emerald-500 rounded-lg flex items-center justify-center mr-4">
                             <span class="text-white font-bold text-xl">TTC</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white">测试时计算</h3>
+                        <h3 class="text-xl font-bold text-white">测试时计算扩展</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        深度研究测试时计算扩展技术，包括推理路径扩展、采样与搜索策略、计算最优扩展、验证与修订、测试时微调。
-                        在DTTC框架中实现了轻量级数学推理和动态测试时间扩展。
+                    <p class="text-gray-300 mb-4 text-sm">
+                        探索 Inference Scaling Laws，通过搜索与验证提升推理能力。
                     </p>
-                    <div class="space-y-2">
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">推理路径扩展</span>
-                            <span class="text-orange-400">专家级</span>
+                    <div class="space-y-3">
+                        <div class="text-sm border-l-2 border-teal-400 pl-3">
+                            <div class="text-gray-200 font-medium">Search & Planning</div>
+                            <div class="text-gray-500 text-xs">实现了 CoAT-MCTS 框架，将蒙特卡洛树搜索与思维偏好优化 (TPO) 结合。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">采样与搜索策略</span>
-                            <span class="text-orange-400">专家级</span>
+                        <div class="text-sm border-l-2 border-teal-400 pl-3">
+                            <div class="text-gray-200 font-medium">Dynamic Scaling</div>
+                            <div class="text-gray-500 text-xs">设计了 DTTC 框架 (AAAI 2026 投稿)，实现轻量级数学推理的动态计算分配。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">计算最优扩展</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">验证与修订</span>
-                            <span class="text-orange-400">专家级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">测试时微调</span>
-                            <span class="text-orange-400">高级</span>
+                        <div class="text-sm border-l-2 border-teal-400 pl-3">
+                            <div class="text-gray-200 font-medium">Process Supervision</div>
+                            <div class="text-gray-500 text-xs">提出了思维干扰惩罚 (TIP) 机制，引导模型进行自我验证与修订。</div>
                         </div>
                     </div>
                 </div>
+                
                 <!-- CUDA Optimization -->
                 <div class="skill-card rounded-xl p-6">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center mr-4">
-                            <span class="text-white font-bold text-xl">CUDA</span>
+                            <span class="text-white font-bold text-xl">HPC</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white">CUDA优化</h3>
+                        <h3 class="text-xl font-bold text-white">高性能计算</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        精通CUDA C++编程，掌握GPU并行计算优化技术。
-                        能够手写高效的深度学习算子和数值计算内核。
+                    <p class="text-gray-300 mb-4 text-sm">
+                        专注于 GPU 内核优化与高效算子实现，榨干硬件性能。
                     </p>
-                    <div class="space-y-2">
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">CUDA C++</span>
-                            <span class="text-orange-400">中级</span>
+                    <div class="space-y-3">
+                        <div class="text-sm border-l-2 border-cyan-400 pl-3">
+                            <div class="text-gray-200 font-medium">Kernel Optimization</div>
+                            <div class="text-gray-500 text-xs">使用 Triton 重写 FlashAttention-2 前向传播内核。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">GPU优化</span>
-                            <span class="text-orange-400">高级</span>
+                        <div class="text-sm border-l-2 border-cyan-400 pl-3">
+                            <div class="text-gray-200 font-medium">Parallel Computing</div>
+                            <div class="text-gray-500 text-xs">手写 CUDA C++ 实现分块矩阵乘法与共享内存优化。</div>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">Triton</span>
-                            <span class="text-orange-400">高级</span>
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-gray-400">并行计算</span>
-                            <span class="text-orange-400">高级</span>
+                        <div class="text-sm border-l-2 border-cyan-400 pl-3">
+                            <div class="text-gray-200 font-medium">Custom Operators</div>
+                            <div class="text-gray-500 text-xs">实现了 Softmax、LayerNorm 等基础算子的 Triton 版本。</div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
