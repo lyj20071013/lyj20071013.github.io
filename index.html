@@ -46,15 +46,14 @@
       </p>
 
       <p>
-        I am a first-year undergraduate at Chongqing University of Technology. My research spans
-        <strong>LLM agents</strong>, <strong>reinforcement learning &amp; alignment</strong>, and
-        <strong>mechanistic interpretability</strong>.
-      </p>
-      <p>
-        Currently, I work on <strong>failure attribution for LLM agents</strong>: understanding which decisions
-        cause an agent to fail and how such diagnoses should be evaluated. More broadly, I am interested in how
-        post-training shapes model behavior and how internal mechanisms emerge during training. I favor
-        controlled, carefully designed experiments that make these questions precisely measurable.
+        My research interests lie in understanding how language models learn,
+        adapt, and make decisions. I work across <strong>LLM agents</strong>,
+        <strong>reinforcement learning and alignment</strong>, and
+        <strong>mechanistic interpretability</strong>, with an emphasis on
+        controlled experiments, causal analysis, and rigorous evaluation.
+        I am especially interested in the gap between what a model achieves and the mechanisms or
+        strategies that produce it: strong task performance alone neither establishes robust
+        generalization nor explains how a model reaches its decisions.
       </p>
 
       <div class="links">
@@ -94,8 +93,8 @@
         <h3>LLM Agents</h3>
         <ul>
           <li>Credit assignment and failure attribution</li>
-          <li>Counterfactual evaluation and repair of agent trajectories</li>
-          <li>Rigorous evaluation methodology for agents</li>
+          <li>Learning from interaction and experience</li>
+          <li>Evaluation and generalization of agent behavior</li>
         </ul>
       </div>
       <div class="interest">
@@ -142,8 +141,9 @@
         <p class="pub-tldr">
           We train 26M-parameter transformers on a synthetic language where recency and rarity always co-occur,
           then pull the two cues apart with a minimal edit. Models reach near-perfect accuracy, yet their
-          behavior under intervention varies across seeds; what is robust is <em>when</em> a model escapes a
-          positional shortcut. Training data sets the timing of mechanism emergence — not which mechanism forms.
+          behavior under intervention is inconsistent. In our controlled setting, document statistics
+          influence when models move beyond positional shortcuts, while the mechanisms that emerge vary
+          across random seeds.
         </p>
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2608.24460" target="_blank" rel="noopener">arXiv</a>
@@ -258,6 +258,7 @@
       document.body.removeChild(ta);
     });
   }
+
   document.querySelectorAll('.copy-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       const text = btn.parentElement.querySelector('pre').textContent;
