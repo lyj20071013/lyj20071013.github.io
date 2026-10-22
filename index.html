@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yijun Liao</title>
+  <meta name="description" content="Yijun Liao — research on reinforcement learning, alignment, and mechanistic interpretability of language models.">
+  <meta name="author" content="Yijun Liao">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231f4e79'/><text x='50%' y='54%' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='white'>YL</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <nav class="container nav">
+    <a class="brand" href="#">Yijun Liao</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="profile">
+    <div class="profile-photo">
+      <img src="images/avatar-web.jpg" alt="Yijun Liao" width="180" height="180">
+    </div>
+
+    <div class="profile-text">
+      <h1>Yijun Liao</h1>
+      <p class="subtitle">
+        First-year Undergraduate · Chongqing University of Technology
+      </p>
+
+      <p>
+        I am a first-year undergraduate at Chongqing University of Technology. My research spans
+        <strong>LLM agents</strong>, <strong>reinforcement learning &amp; alignment</strong>, and
+        <strong>mechanistic interpretability</strong>.
+      </p>
+      <p>
+        Currently, I work on <strong>failure attribution for LLM agents</strong>: understanding which decisions
+        cause an agent to fail and how such diagnoses should be evaluated. More broadly, I am interested in how
+        post-training shapes model behavior and how internal mechanisms emerge during training. I favor
+        controlled, carefully designed experiments that make these questions precisely measurable.
+      </p>
+
+      <div class="links">
+        <a href="mailto:liuyingliao0620@gmail.com">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          liuyingliao0620@gmail.com
+        </a>
+        <a href="https://github.com/lyj20071013" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=M-LxtLEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.84 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.16 4.44L24 9.5z"/></svg>
+          Google Scholar
+        </a>
+        <!-- TODO: uncomment and fill in once you have these
+        <a href="https://twitter.com/XXXX" target="_blank" rel="noopener">X / Twitter</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <div class="interests">
+      <div class="interest">
+        <h3>RL &amp; Alignment</h3>
+        <ul>
+          <li>Preference optimization and LLM post-training</li>
+          <li>Reinforcement learning for language models</li>
+          <li>Alignment in dynamic, long-horizon contexts</li>
+        </ul>
+      </div>
+      <div class="interest">
+        <h3>LLM Agents</h3>
+        <ul>
+          <li>Credit assignment and failure attribution</li>
+          <li>Counterfactual evaluation and repair of agent trajectories</li>
+          <li>Rigorous evaluation methodology for agents</li>
+        </ul>
+      </div>
+      <div class="interest">
+        <h3>Mechanistic Interpretability</h3>
+        <ul>
+          <li>Causal interventions and circuit analysis</li>
+          <li>Training dynamics and mechanism emergence</li>
+          <li>In-context learning and knowledge conflicts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">Aug 2026</span><span>New preprint <a href="https://arxiv.org/abs/2608.24460" target="_blank" rel="noopener"><em>Shortcut Before Circuit</em></a> is out on arXiv.</span></li>
+      <li><span class="date">Jun 2026</span><span>Invited to serve on the Program Committee of <strong>AAAI 2027</strong>.</span></li>
+      <li><span class="date">Jun 2026</span><span>Updated version (v3) of <a href="https://arxiv.org/abs/2512.03704" target="_blank" rel="noopener"><em>Overcoming State Inertia</em></a> released, with code and IC-Bench.</span></li>
+      <li><span class="date">Dec 2025</span><span>First preprint <a href="https://arxiv.org/abs/2512.03704" target="_blank" rel="noopener"><em>Overcoming State Inertia</em></a> posted on arXiv.</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <!-- To add a paper: copy one <article>, set data-tags (comma-separated; filter buttons are generated
+       automatically), and put a static thumbnail + an animated one (GIF/SVG/WebP) in images/. -->
+  <section id="publications">
+    <h2>Publications &amp; Preprints</h2>
+    <div class="pub-filter" id="pub-filter" role="group" aria-label="Filter publications by topic"></div>
+
+    <article class="pub" data-tags="Interpretability">
+      <div class="pub-thumb">
+        <img class="thumb-static" src="images/shortcut.svg" alt="Fixed-offset positional shortcut versus retrieval of the current value">
+        <img class="thumb-anim" src="images/shortcut-anim.svg" alt="" aria-hidden="true">
+        <span class="badge">Preprint</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">
+          <a href="https://arxiv.org/abs/2608.24460" target="_blank" rel="noopener">Shortcut Before Circuit: Document Statistics Time In-Context Conflict Resolution</a>
+        </h3>
+        <p class="pub-authors"><strong>Yijun Liao</strong>, Fanwei Liang</p>
+        <p class="pub-venue"><em>Under review</em>, 2026</p>
+        <p class="pub-tldr">
+          We train 26M-parameter transformers on a synthetic language where recency and rarity always co-occur,
+          then pull the two cues apart with a minimal edit. Models reach near-perfect accuracy, yet their
+          behavior under intervention varies across seeds; what is robust is <em>when</em> a model escapes a
+          positional shortcut. Training data sets the timing of mechanism emergence — not which mechanism forms.
+        </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2608.24460" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2608.24460" target="_blank" rel="noopener">PDF</a>
+          <button class="bib-toggle" data-target="bib-1">BibTeX</button>
+        </div>
+        <div class="bibtex" id="bib-1">
+          <button class="copy-btn" type="button">Copy</button>
+<pre>@article{liao2026shortcut,
+  title   = {Shortcut Before Circuit: Document Statistics Time In-Context Conflict Resolution},
+  author  = {Liao, Yijun and Liang, Fanwei},
+  journal = {arXiv preprint arXiv:2608.24460},
+  year    = {2026}
+}</pre>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub" data-tags="RL &amp; Alignment">
+      <div class="pub-thumb">
+        <img class="thumb-static" src="images/inertia.svg" alt="Dual-zone temporal attention: anchor zone kept, older history down-weighted">
+        <img class="thumb-anim" src="images/inertia-anim.svg" alt="" aria-hidden="true">
+        <span class="badge">Preprint</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">
+          <a href="https://arxiv.org/abs/2512.03704" target="_blank" rel="noopener">Overcoming State Inertia: Minimally Invasive Temporal Alignment for Evolving Contexts</a>
+        </h3>
+        <p class="pub-authors"><strong>Yijun Liao</strong></p>
+        <p class="pub-venue"><em>arXiv preprint</em>, 2025</p>
+        <p class="pub-tldr">
+          Long-context dialogue models cling to stale history and fail to follow shifting user intent, while
+          existing fixes erode general language ability. We propose <strong>DZ-TiDPO</strong>, combining
+          conflict-aware preference optimization with a temporal attention bias that decouples state updates
+          from language modeling, and introduce <strong>IC-Bench</strong> for evaluation.
+        </p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2512.03704" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2512.03704" target="_blank" rel="noopener">PDF</a>
+          <a href="https://github.com/lyj20071013/DZ-TiDPO" target="_blank" rel="noopener">Code</a>
+          <button class="bib-toggle" data-target="bib-2">BibTeX</button>
+        </div>
+        <div class="bibtex" id="bib-2">
+          <button class="copy-btn" type="button">Copy</button>
+<pre>@article{liao2025overcoming,
+  title   = {Overcoming State Inertia: Minimally Invasive Temporal Alignment for Evolving Contexts},
+  author  = {Liao, Yijun},
+  journal = {arXiv preprint arXiv:2512.03704},
+  year    = {2025}
+}</pre>
+        </div>
+      </div>
+    </article>
+
+    <p class="pub-empty" id="pub-empty" hidden>No papers under this topic yet.</p>
+  </section>
+
+  <!-- ============ SERVICE ============ -->
+  <section id="service">
+    <h2>Academic Service</h2>
+    <ul class="news">
+      <li><span class="date">2026</span><span>Program Committee Member, <strong>AAAI 2027</strong> (AAAI Conference on Artificial Intelligence)</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="news">
+      <li><span class="date">2026 – now</span><span><strong>Chongqing University of Technology</strong>, Undergraduate</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="container footer">
+  <p>© <span id="year"></span> Yijun Liao · Last updated Oct 2026</p>
+</footer>
+
+<script>
+  // Dark mode: respects system preference, remembers manual choice
+  (function () {
+    const root = document.documentElement;
+    let saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved) root.setAttribute('data-theme', saved);
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      const current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+
+  // BibTeX toggles
+  document.querySelectorAll('.bib-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.getElementById(btn.dataset.target).classList.toggle('open');
+      btn.classList.toggle('active');
+    });
+  });
+
+  // Copy BibTeX
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    return new Promise(function (resolve, reject) {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy') ? resolve() : reject(); } catch (e) { reject(e); }
+      document.body.removeChild(ta);
+    });
+  }
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const text = btn.parentElement.querySelector('pre').textContent;
+      copyText(text).then(function () {
+        btn.textContent = 'Copied!'; btn.classList.add('done');
+      }, function () {
+        btn.textContent = 'Press Ctrl+C';
+      });
+      setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+    });
+  });
+
+  // Publication filter (buttons built from each paper's data-tags)
+  (function () {
+    const pubs = Array.from(document.querySelectorAll('.pub'));
+    const bar = document.getElementById('pub-filter');
+    const empty = document.getElementById('pub-empty');
+    const tagsOf = function (p) { return p.dataset.tags.split(',').map(function (t) { return t.trim(); }); };
+    const counts = {};
+    pubs.forEach(function (p) { tagsOf(p).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); });
+    const tags = ['All'].concat(Object.keys(counts).sort());
+
+    function apply(tag) {
+      let shown = 0;
+      pubs.forEach(function (p) {
+        const on = tag === 'All' || tagsOf(p).indexOf(tag) !== -1;
+        p.classList.toggle('is-hidden', !on);
+        if (on) shown++;
+      });
+      empty.hidden = shown > 0;
+      bar.querySelectorAll('button').forEach(function (b) {
+        const active = b.dataset.tag === tag;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-pressed', active);
+      });
+    }
+
+    tags.forEach(function (t) {
+      const b = document.createElement('button');
+      b.type = 'button'; b.dataset.tag = t;
+      b.innerHTML = t + ' <span class="count">' + (t === 'All' ? pubs.length : counts[t]) + '</span>';
+      b.addEventListener('click', function () { apply(t); });
+      bar.appendChild(b);
+    });
+
+    // Tag chips under each paper's venue line, also clickable
+    pubs.forEach(function (p) {
+      const venue = p.querySelector('.pub-venue');
+      tagsOf(p).forEach(function (t) {
+        const c = document.createElement('button');
+        c.type = 'button'; c.className = 'tag-chip'; c.textContent = t;
+        c.addEventListener('click', function () { apply(t); });
+        venue.appendChild(c);
+      });
+    });
+
+    apply('All');
+  })();
+
+  // Thumbnails: restart the animation each time it is revealed
+  document.querySelectorAll('.pub').forEach(function (p) {
+    const anim = p.querySelector('.thumb-anim');
+    if (!anim) return;
+    const base = anim.getAttribute('src');
+    p.addEventListener('mouseenter', function () { anim.src = base + '?t=' + Date.now(); });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
